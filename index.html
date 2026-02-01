@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kollekt | WU Wien</title>
+    <title>kollekt group</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,15 +20,13 @@
                         sans: ['"Inter"', 'sans-serif'] 
                     },
                     colors: {
-                        paper: '#F4F4EC',      // Dein Hintergrund
-                        ink: '#105E36',        // Dein Dunkelgrün (Text)
-                        fresh: '#ADE1B3',      // Dein Hellgrün
-                        alert: '#FF7240',      // Dein Orange
+                        paper: '#F4F4EC',      
+                        ink: '#105E36',        
+                        fresh: '#ADE1B3',      
+                        alert: '#FF7240',
                     },
                     borderRadius: { '4xl': '2rem' },
-                    animation: {
-                        'marquee': 'marquee 20s linear infinite',
-                    },
+                    animation: { 'marquee': 'marquee 25s linear infinite' },
                     keyframes: {
                         marquee: {
                             '0%': { transform: 'translateX(0%)' },
@@ -41,141 +39,194 @@
     </script>
     <style>
         body { background-color: #F4F4EC; }
-        .editorial-line { height: 1px; background: rgba(16, 94, 54, 0.2); }
-        .glass-tag { background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.8); }
+        .glass-tag { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(8px); }
+        .price-transition { transition: all 0.5s ease-out; }
     </style>
 </head>
 <body class="text-ink antialiased selection:bg-fresh selection:text-ink">
 
     <div class="bg-ink text-fresh overflow-hidden py-2 font-mono text-xs uppercase tracking-widest border-b border-fresh/20">
         <div class="whitespace-nowrap animate-marquee flex gap-8">
-            <span>+++ Start an der WU Wien +++</span>
-            <span>Nächster Drop: Dienstag 14:00</span>
-            <span>+++ Keine Liefergebühren +++</span>
-            <span>Direkt vom Erzeuger</span>
-            <span>+++ Start an der WU Wien +++</span>
-            <span>Nächster Drop: Dienstag 14:00</span>
-            <span>+++ Keine Liefergebühren +++</span>
-            <span>Direkt vom Erzeuger</span>
+            <span>+++ LAUNCH DROP: DONNERSTAG 19. +++</span>
+            <span>Student Survival Box</span>
+            <span>+++ PREIS SINKT LIVE MIT JEDEM BEITRITT +++</span>
+            <span>+++ LAUNCH DROP: DONNERSTAG 19. +++</span>
+            <span>Student Survival Box</span>
         </div>
     </div>
 
     <nav class="px-6 py-6 flex justify-between items-end">
         <h1 class="font-serif text-4xl italic font-light tracking-tight leading-none">kollekt.</h1>
         <div class="hidden sm:block text-xs font-mono opacity-60 text-right">
-            Vienna, Austria<br>
-            Est. 2026
+            Vienna, WU Campus<br>
+            Pilot Phase
         </div>
     </nav>
 
     <main class="px-4 pb-12 max-w-[1600px] mx-auto">
         
         <div class="mb-12 mt-4 border-b border-ink/10 pb-12">
-            <h2 class="font-serif text-[13vw] sm:text-[11vw] leading-[0.85] uppercase font-semibold text-ink mix-blend-multiply">
-                Checkt euch<br>
-                <span class="pl-[10vw] italic text-transparent bg-clip-text bg-gradient-to-r from-ink to-fresh">die Palette.</span>
+            <h2 class="font-serif text-[11vw] sm:text-[9vw] leading-[0.9] font-semibold text-ink">
+                Gemeinsam<br>
+                <span class="pl-[5vw] italic text-transparent bg-clip-text bg-gradient-to-r from-ink to-fresh">den Preis drücken.</span>
             </h2>
-            <div class="flex justify-end mt-4">
-                <p class="font-sans text-lg sm:text-xl max-w-md text-right leading-relaxed">
-                    Schluss mit Supermarkt-Preisen. Wir bestellen LKW-Ladungen direkt an die WU. Ihr teilt es auf.
+            <div class="flex justify-end mt-8">
+                <p class="font-sans text-lg sm:text-xl max-w-lg text-right leading-relaxed">
+                    Je mehr Leute der Gruppe beitreten, desto billiger wird die Palette.
+                    <span class="font-semibold border-b border-fresh">Live-Tracking.</span>
                 </p>
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-12 gap-4 h-auto md:h-[600px]">
 
-            <div class="md:col-span-3 bg-white rounded-4xl p-6 flex flex-col justify-between border border-ink/5 hover:border-ink transition duration-500 group relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-32 bg-fresh/30 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-fresh/50 transition"></div>
-                
+            <div class="md:col-span-3 bg-white rounded-4xl p-6 flex flex-col justify-between border border-ink/5 relative overflow-hidden">
                 <div>
-                    <div class="inline-block border border-ink px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Location</div>
+                    <div class="inline-block border border-ink px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Pickup Point</div>
                     <h3 class="font-serif text-3xl">WU Campus</h3>
-                    <p class="font-sans text-sm text-gray-500 mt-2">Vor dem Library Center.</p>
+                    <p class="font-sans text-sm text-gray-500 mt-2">Vor dem Library Center (LC).</p>
                 </div>
-                
-                <div class="mt-8 space-y-3">
-                    <div class="flex items-center justify-between text-sm border-b border-gray-100 pb-2">
-                        <span>Status</span>
-                        <span class="flex items-center gap-2 font-bold"><span class="w-2 h-2 bg-alert rounded-full animate-pulse"></span> Live</span>
-                    </div>
-                    <div class="flex items-center justify-between text-sm border-b border-gray-100 pb-2">
-                        <span>Pickup</span>
-                        <span class="font-mono">Di & Do</span>
-                    </div>
+                <div class="mt-8 bg-fresh/20 p-4 rounded-2xl">
+                    <span class="block text-xs font-mono uppercase tracking-widest mb-1 text-ink/60">Nächster Termin</span>
+                    <span class="block text-2xl font-bold font-serif">Do, 19. Feb</span>
                 </div>
             </div>
 
             <div class="md:col-span-5 relative bg-ink rounded-4xl overflow-hidden group">
-                <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700 grayscale group-hover:grayscale-0">
+                <img src="/ChatGPT Image 1. Feb. 2026, 12_37_11.png">
                 
-                <div class="absolute top-6 left-6 glass-tag px-4 py-2 rounded-full">
-                    <span class="font-mono text-xs font-bold text-ink">DROP #01: ORANGEN</span>
+                <div class="absolute top-6 left-6 glass-tag px-4 py-2 rounded-full border border-white/20">
+                    <span class="font-mono text-xs font-bold text-ink">DROP #001: GEMÜSE BOX</span>
                 </div>
 
-                <div class="absolute bottom-6 left-6 right-6">
-                    <h3 class="font-serif text-4xl text-paper italic mb-2">Sizilien —> 1020.</h3>
-                    <p class="text-paper/80 text-sm font-sans max-w-xs">Direkt vom Bauern. Keine Zwischenhändler, kein unnötiges Plastik.</p>
+                <div class="absolute top-6 right-6 bg-alert text-white px-4 py-4 rounded-full flex flex-col items-center justify-center h-28 w-28 rotate-12 shadow-lg z-10">
+                    <span class="text-[10px] font-bold uppercase tracking-widest mb-1">Aktuell</span>
+                    <span id="sticker-price" class="text-3xl font-serif font-bold leading-none">9€</span>
+                    <span class="text-[10px] opacity-80 mt-1">Ziel: 7€</span>
+                </div>
+
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <h3 class="font-serif text-3xl text-paper italic mb-1">Student Survival Box.</h3>
+                    <p class="text-paper/90 text-sm font-sans max-w-xs">
+                        4-5kg Gemüse-Mix. Alles was du brauchst, um günstig durch die Woche zu kommen.
+                    </p>
                 </div>
             </div>
 
-            <div class="md:col-span-4 bg-fresh rounded-4xl p-8 flex flex-col justify-center relative overflow-hidden">
-                <svg class="absolute -right-10 -bottom-10 w-64 h-64 text-ink opacity-10 rotate-12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <div class="md:col-span-4 bg-fresh rounded-4xl p-8 flex flex-col justify-between relative overflow-hidden">
                 
-                <h3 class="font-serif text-3xl mb-6">Der Plan:</h3>
-                <ul class="space-y-6 font-sans">
-                    <li class="flex gap-4 items-start">
-                        <span class="font-mono text-ink/50">01</span>
-                        <p class="font-medium leading-tight">Rein in die WhatsApp Gruppe.</p>
-                    </li>
-                    <li class="flex gap-4 items-start">
-                        <span class="font-mono text-ink/50">02</span>
-                        <p class="font-medium leading-tight">Wir posten den Deal (z.B. 10kg Orangen für 12€).</p>
-                    </li>
-                    <li class="flex gap-4 items-start">
-                        <span class="font-mono text-ink/50">03</span>
-                        <p class="font-medium leading-tight">Abholen am Campus. Fertig.</p>
-                    </li>
-                </ul>
+                <div>
+                    <h3 class="font-serif text-2xl mb-2">Live Preis-Ticker</h3>
+                    <div class="flex items-end gap-2 mb-2">
+                        <span id="big-price" class="text-6xl font-serif font-bold text-ink price-transition">9.00€</span>
+                        <span class="text-sm font-sans mb-4 text-ink/60 line-through">13.00€</span>
+                    </div>
 
-                <a href="https://chat.whatsapp.com/GBd1eokSv1JLnteROmR4m6" target="_blank" class="mt-8 bg-ink text-paper py-4 px-6 rounded-xl font-bold text-center hover:bg-black transition flex justify-center items-center gap-2 group">
-                    In die Gruppe
-                    <span class="group-hover:translate-x-1 transition">-></span>
-                </a>
+                    <div class="w-full bg-ink/10 h-3 rounded-full overflow-hidden mb-2">
+                        <div id="progress-bar" class="h-full bg-ink transition-all duration-500 ease-out" style="width: 85%"></div>
+                    </div>
+                    
+                    <p class="font-mono text-xs text-ink uppercase tracking-wide">
+                        Noch <span id="students-left" class="font-bold">15</span> Studenten bis 8€
+                    </p>
+                </div>
+
+                <div class="mt-8">
+                    <button id="join-btn" onclick="joinCommunity()" class="w-full bg-ink text-paper py-5 px-6 rounded-xl font-bold text-lg text-center hover:bg-black transition flex justify-center items-center gap-2 group shadow-xl cursor-pointer relative overflow-hidden">
+                        <span class="relative z-10">Preis drücken & Beitreten</span>
+                        <svg class="w-5 h-5 relative z-10 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </button>
+                    <p class="text-center text-xs mt-3 opacity-60 font-sans">
+                        Klick zählt sofort. Weiterleitung zu WhatsApp.
+                    </p>
+                </div>
             </div>
 
             <div class="md:col-span-12 bg-white rounded-4xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 border border-ink/5 mt-4">
                 <div class="flex items-center gap-4">
-                    <div class="flex -space-x-4">
-                        <div class="w-12 h-12 rounded-full border-2 border-white bg-gray-200 overflow-hidden"><img src="https://ui-avatars.com/api/?name=Anna&background=ADE1B3&color=105E36"></div>
-                        <div class="w-12 h-12 rounded-full border-2 border-white bg-gray-200 overflow-hidden"><img src="https://ui-avatars.com/api/?name=Tom&background=FF7240&color=fff"></div>
-                        <div class="w-12 h-12 rounded-full border-2 border-white bg-ink text-fresh flex items-center justify-center font-mono text-xs">+450</div>
-                    </div>
-                    <p class="font-sans text-sm font-medium">Studenten sind schon dabei.</p>
+                    <span class="bg-alert/10 text-alert px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Pilot Phase</span>
+                    <p class="font-sans text-sm font-medium text-gray-500">
+                        Wir starten frisch an der WU.
+                    </p>
                 </div>
-                
-                <div class="h-px w-20 bg-ink/10 hidden md:block"></div>
-                
-                <div class="font-serif italic text-xl text-center md:text-right">
-                    "Warum im Supermarkt das Doppelte zahlen?"
+                <div class="font-serif italic text-xl text-center md:text-right text-ink">
+                    "Warum für Marketing zahlen, wenn man Gemüse essen kann?"
                 </div>
             </div>
 
         </div>
-        
     </main>
 
-    <footer class="px-6 py-12 border-t border-ink/10 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8 max-w-[1600px] mx-auto">
-        <div>
-            <span class="font-serif font-bold text-xl">kollekt.</span>
-            <p class="text-sm opacity-50 mt-1">Großhandelspreise für Studenten.</p>
-        </div>
-        
+    <footer class="px-6 py-12 border-t border-ink/10 flex flex-col sm:flex-row justify-between items-center gap-8 max-w-[1600px] mx-auto opacity-60">
+        <span class="font-serif font-bold text-lg">kollekt.</span>
         <div class="flex gap-6 font-mono text-xs uppercase tracking-wider">
-            <a href="#" class="hover:underline">Insta</a>
-            <a href="#" class="hover:underline">Mail</a>
-            <a href="#" class="hover:underline">Impressum</a>
+            <a href="#">Insta</a>
+            <a href="#">Kontakt</a>
         </div>
     </footer>
+
+    <script>
+        // Startwerte (Simulation: Es haben schon 85 Leute geklickt -> Preis noch 9€, aber kurz vor 8€)
+        let totalClicks = 85; 
+        
+        // Logik: 
+        // 0-99 Klicks = 9€
+        // 100-199 Klicks = 8€
+        // 200+ Klicks = 7€
+        
+        function updateUI() {
+            // Berechne aktuellen Preis
+            let price = 9;
+            if (totalClicks >= 200) price = 7;
+            else if (totalClicks >= 100) price = 8;
+            
+            // Berechne "Studenten bis zum nächsten Drop" (Das ist der Marketing-Teil)
+            // Wir tun so als wären es Studenten, technisch sind es Klicks bis zum nächsten 100er Schritt
+            let nextMilestone = Math.floor(totalClicks / 100) * 100 + 100;
+            let clicksNeeded = nextMilestone - totalClicks;
+            
+            // Wenn wir bei 7€ sind (Floor), sagen wir "Bestpreis erreicht"
+            if (price === 7) {
+                document.getElementById('students-left').innerText = "0";
+                document.getElementById('progress-bar').style.width = "100%";
+                document.querySelector('.font-mono.text-xs.text-ink').innerText = "BESTPREIS ERREICHT! 🔥";
+            } else {
+                // Zeige "Noch X Studenten" (Verkauf als 10er Schritte ist hier implizit, 
+                // da wir einfach die Zahl der Klicks anzeigen. 1 Klick = "1 Student")
+                document.getElementById('students-left').innerText = clicksNeeded;
+                
+                // Progress Bar innerhalb des aktuellen Levels (0-100%)
+                let progressInLevel = totalClicks % 100;
+                document.getElementById('progress-bar').style.width = progressInLevel + "%";
+            }
+
+            // Update Preise im UI
+            document.getElementById('big-price').innerText = price + ".00€";
+            document.getElementById('sticker-price').innerText = price + "€";
+        }
+
+        function joinCommunity() {
+            const btn = document.getElementById('join-btn');
+            
+            // 1. Zähler erhöhen
+            totalClicks++;
+            
+            // 2. UI Updaten
+            updateUI();
+            
+            // 3. Button Feedback
+            btn.innerHTML = '<span class="relative z-10">Gezählt! Leite weiter...</span>';
+            btn.classList.add('bg-black', 'text-white');
+            
+            // 4. Delay für Weiterleitung (damit man den Effekt sieht)
+            setTimeout(() => {
+                window.location.href = "https://chat.whatsapp.com/";
+            }, 800);
+        }
+
+        // Init beim Laden
+        updateUI();
+    </script>
 
 </body>
 </html>
